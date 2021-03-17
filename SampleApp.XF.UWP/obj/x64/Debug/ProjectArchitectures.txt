@@ -1,1 +1,0 @@
-C:\Users\braya\source\repos\SampleApp\SampleApp.XF.UWP\SampleApp.XF.UWP.csproj;x64

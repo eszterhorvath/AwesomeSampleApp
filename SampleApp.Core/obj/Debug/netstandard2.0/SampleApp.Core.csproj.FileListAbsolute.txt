@@ -1,9 +1,0 @@
-C:\Users\braya\source\repos\SampleApp\SampleApp.Core\bin\Debug\netstandard2.0\SampleApp.Core.deps.json
-C:\Users\braya\source\repos\SampleApp\SampleApp.Core\bin\Debug\netstandard2.0\SampleApp.Core.dll
-C:\Users\braya\source\repos\SampleApp\SampleApp.Core\bin\Debug\netstandard2.0\SampleApp.Core.pdb
-C:\Users\braya\source\repos\SampleApp\SampleApp.Core\obj\Debug\netstandard2.0\SampleApp.Core.AssemblyInfoInputs.cache
-C:\Users\braya\source\repos\SampleApp\SampleApp.Core\obj\Debug\netstandard2.0\SampleApp.Core.AssemblyInfo.cs
-C:\Users\braya\source\repos\SampleApp\SampleApp.Core\obj\Debug\netstandard2.0\SampleApp.Core.csproj.CoreCompileInputs.cache
-C:\Users\braya\source\repos\SampleApp\SampleApp.Core\obj\Debug\netstandard2.0\SampleApp.Core.dll
-C:\Users\braya\source\repos\SampleApp\SampleApp.Core\obj\Debug\netstandard2.0\SampleApp.Core.pdb
-C:\Users\braya\source\repos\SampleApp\SampleApp.Core\obj\Debug\netstandard2.0\SampleApp.Core.csprojAssemblyReference.cache

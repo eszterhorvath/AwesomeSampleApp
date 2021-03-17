@@ -1,7 +1,0 @@
-C:\Users\braya\source\repos\SampleApp\SampleApp.XF.UWP\obj\x86\Debug\SampleApp.XF.UWP.csprojAssemblyReference.cache
-C:\Users\braya\source\repos\SampleApp\SampleApp.XF.UWP\obj\x86\Debug\App.g.i.cs
-C:\Users\braya\source\repos\SampleApp\SampleApp.XF.UWP\obj\x86\Debug\App.g.cs
-C:\Users\braya\source\repos\SampleApp\SampleApp.XF.UWP\obj\x86\Debug\XamlTypeInfo.g.cs
-C:\Users\braya\source\repos\SampleApp\SampleApp.XF.UWP\obj\x86\Debug\App.xaml
-C:\Users\braya\source\repos\SampleApp\SampleApp.XF.UWP\obj\x86\Debug\App.xbf
-C:\Users\braya\source\repos\SampleApp\SampleApp.XF.UWP\obj\x86\Debug\XamlSaveStateFile.xml
