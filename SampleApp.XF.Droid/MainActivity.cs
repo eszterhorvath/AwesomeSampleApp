@@ -16,7 +16,7 @@ namespace SampleApp.XF.Droid
         MainLauncher = true,
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation,
         LaunchMode = LaunchMode.SingleTask)]
-    public class MainActivity : MvxFormsAppCompatActivity<MvxFormsAndroidSetup<App, FormsApp>, App, FormsApp>
+    public class MainActivity : MvxFormsAppCompatActivity<Setup, App, FormsApp>
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {

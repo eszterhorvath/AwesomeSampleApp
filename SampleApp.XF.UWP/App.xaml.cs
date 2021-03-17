@@ -35,7 +35,7 @@ namespace SampleApp.XF.UWP
         }
     }
 
-    public abstract class SampleApp : MvxWindowsApplication<MvxFormsWindowsSetup<Core.App, FormsApp>, Core.App, FormsApp, MvxFormsWindowsPage>
+    public abstract class SampleApp : MvxWindowsApplication<Setup, Core.App, FormsApp, MvxFormsWindowsPage>
     {
 
     }
