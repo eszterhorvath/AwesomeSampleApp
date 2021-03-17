@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <Configurations>Debug;Release;NoLink</Configurations>
+        <LangVersion>8.0</LangVersion>
+        <ApplicationIcon>dog-face-icon.ico</ApplicationIcon>
+    </PropertyGroup>
+
+    <ItemGroup Condition="$(Configuration) == 'NoLink'">
+        <PackageReference Include="LiveXAML" Version="2.1.73" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MvvmCross.Forms" Version="6.4.3" />
+        <PackageReference Include="Xamarin.Essentials" Version="1.5.2" />
+        <PackageReference Include="Xamarin.Forms" Version="4.8.0-custom-optiq.11" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\SampleApp.Core\SampleApp.Core.csproj" />
+    </ItemGroup>
+</Project>

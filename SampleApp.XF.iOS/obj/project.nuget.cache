@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "I8r4zgCXI4J8pcFRHaPYJ0ryIdA11VpUZ1NlTzzErdBcInkwrEqIbu43fNyuqGF1bd4v/U/ArAcZKBzGSSw+eA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\braya\\source\\repos\\SampleApp\\SampleApp.XF.iOS\\SampleApp.XF.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\braya\\.nuget\\packages\\mvvmcross\\6.4.3\\mvvmcross.6.4.3.nupkg.sha512",
+    "C:\\Users\\braya\\.nuget\\packages\\mvvmcross.forms\\6.4.3\\mvvmcross.forms.6.4.3.nupkg.sha512",
+    "C:\\Users\\braya\\.nuget\\packages\\mvvmcross.plugin.messenger\\6.4.3\\mvvmcross.plugin.messenger.6.4.3.nupkg.sha512",
+    "C:\\Users\\braya\\.nuget\\packages\\xamarin.essentials\\1.5.2\\xamarin.essentials.1.5.2.nupkg.sha512",
+    "C:\\Users\\braya\\.nuget\\packages\\xamarin.forms\\4.8.0-custom-optiq.11\\xamarin.forms.4.8.0-custom-optiq.11.nupkg.sha512"
+  ],
+  "logs": []
+}

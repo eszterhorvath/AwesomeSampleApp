@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+      <NeutralLanguage>en-US</NeutralLanguage>
+      <Configurations>Debug;Release</Configurations>
+      <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MvvmCross" Version="6.4.3" />
+        <PackageReference Include="MvvmCross.Plugin.Messenger" Version="6.4.3" />
+    </ItemGroup>
+
+</Project>

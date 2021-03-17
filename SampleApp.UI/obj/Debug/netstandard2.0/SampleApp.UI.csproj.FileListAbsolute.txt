@@ -1,0 +1,15 @@
+C:\Users\braya\source\repos\SampleApp\SampleApp.UI\bin\Debug\netstandard2.0\SampleApp.UI.deps.json
+C:\Users\braya\source\repos\SampleApp\SampleApp.UI\bin\Debug\netstandard2.0\SampleApp.UI.dll
+C:\Users\braya\source\repos\SampleApp\SampleApp.UI\bin\Debug\netstandard2.0\SampleApp.UI.pdb
+C:\Users\braya\source\repos\SampleApp\SampleApp.UI\bin\Debug\netstandard2.0\SampleApp.Core.dll
+C:\Users\braya\source\repos\SampleApp\SampleApp.UI\bin\Debug\netstandard2.0\SampleApp.Core.pdb
+C:\Users\braya\source\repos\SampleApp\SampleApp.UI\obj\Debug\netstandard2.0\SampleApp.UI.csprojAssemblyReference.cache
+C:\Users\braya\source\repos\SampleApp\SampleApp.UI\obj\Debug\netstandard2.0\FormsApp.xaml.g.cs
+C:\Users\braya\source\repos\SampleApp\SampleApp.UI\obj\Debug\netstandard2.0\Views\StartPage.xaml.g.cs
+C:\Users\braya\source\repos\SampleApp\SampleApp.UI\obj\Debug\netstandard2.0\SampleApp.UI.AssemblyInfoInputs.cache
+C:\Users\braya\source\repos\SampleApp\SampleApp.UI\obj\Debug\netstandard2.0\SampleApp.UI.AssemblyInfo.cs
+C:\Users\braya\source\repos\SampleApp\SampleApp.UI\obj\Debug\netstandard2.0\SampleApp.UI.csproj.CoreCompileInputs.cache
+C:\Users\braya\source\repos\SampleApp\SampleApp.UI\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\braya\source\repos\SampleApp\SampleApp.UI\obj\Debug\netstandard2.0\SampleApp.UI.csproj.CopyComplete
+C:\Users\braya\source\repos\SampleApp\SampleApp.UI\obj\Debug\netstandard2.0\SampleApp.UI.dll
+C:\Users\braya\source\repos\SampleApp\SampleApp.UI\obj\Debug\netstandard2.0\SampleApp.UI.pdb

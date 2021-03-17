@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:MvxContentPage x:TypeArguments="viewModels:StartViewModel"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+             xmlns:viewModels="clr-namespace:SampleApp.Core.ViewModels;assembly=SampleApp.Core"
+             xmlns:behaviors="clr-namespace:SampleApp.UI.Behaviors;assembly=SampleApp.UI"
+             x:Class="SampleApp.UI.Views.StartPage"
+             x:DataType="viewModels:StartViewModel"
+             Title="Awesome Sample App">
+    <StackLayout>
+        <Label Text="Welcome to Awesome Sample App!"
+               VerticalOptions="Center" 
+               HorizontalOptions="CenterAndExpand"
+               Margin="100"/>
+        <Label Text="What's your favorite theme?"
+               HorizontalOptions="StartAndExpand"
+               VerticalOptions="Center"
+               Margin="20,20,20,0"/>
+        <Picker x:Name="ThemePicker"
+                ItemsSource="{Binding KeysList}"
+                VerticalOptions="Center"
+                Margin="20,0,20,20">
+            <Picker.Behaviors>
+                <behaviors:PickerItemSelectedToCommandBehavior Command="{Binding SelectFavoriteThemeCommand}" />
+            </Picker.Behaviors>
+        </Picker>
+    </StackLayout>
+</views:MvxContentPage>
