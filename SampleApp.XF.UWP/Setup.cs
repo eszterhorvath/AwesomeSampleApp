@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using MvvmCross;
 using MvvmCross.Forms.Platforms.Uap.Core;
-using SampleApp.Core.Services;
 using SampleApp.UI;
 
 namespace SampleApp.XF.UWP
@@ -16,7 +15,6 @@ namespace SampleApp.XF.UWP
         {
             base.InitializeFirstChance();
 
-            Mvx.IoCProvider.RegisterType<INativeThemeService, UWPThemeService>();
         }
     }
 }

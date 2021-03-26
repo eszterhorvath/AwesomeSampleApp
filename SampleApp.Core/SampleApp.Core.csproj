@@ -12,4 +12,8 @@
         <PackageReference Include="MvvmCross.Plugin.Messenger" Version="6.4.3" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Services\" />
+    </ItemGroup>
+
 </Project>

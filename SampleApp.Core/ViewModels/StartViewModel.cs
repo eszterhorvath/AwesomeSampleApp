@@ -1,19 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Windows.Input;
-using MvvmCross.Commands;
 using MvvmCross.ViewModels;
 
 namespace SampleApp.Core.ViewModels
 {
     public class StartViewModel : MvxViewModel
     {
-        private Theme _theme = Theme.System;
         private Dictionary<string, Theme> _favoriteThemeAnswers;
         private List<string> _keysList;
-        private MvxCommand<string> _selectFavoriteThemeCommand;
 
         public StartViewModel()
         {
@@ -23,15 +17,7 @@ namespace SampleApp.Core.ViewModels
                 { "Dark theme is the best theme.", Theme.Dark },
                 { "My favorite theme is light theme because i'm a boomer.", Theme.Light }
             };
-
-            SelectFavoriteThemeCommand = new MvxCommand<string>((t) => Theme = FavoriteThemeAnswers[t], _ => true);
             KeysList = FavoriteThemeAnswers.Keys.ToList();
-        }
-
-        public Theme Theme
-        {
-            get => _theme;
-            set => this.RaiseAndSetIfChanged(ref _theme, value);
         }
 
         public Dictionary<string, Theme> FavoriteThemeAnswers
@@ -46,13 +32,6 @@ namespace SampleApp.Core.ViewModels
             set => this.RaiseAndSetIfChanged(ref _keysList, value);
         }
 
-        public MvxCommand<string> SelectFavoriteThemeCommand
-        {
-            get => _selectFavoriteThemeCommand;
-            set => this.RaiseAndSetIfChanged(ref _selectFavoriteThemeCommand, value);
-        }
-
     }
-
-    public enum Theme {System, Light, Dark}
+    public enum Theme { System, Light, Dark }
 }

@@ -10,7 +10,6 @@ using System.Linq;
 using System.Text;
 using MvvmCross;
 using MvvmCross.Forms.Platforms.Android.Core;
-using SampleApp.Core.Services;
 using SampleApp.UI;
 
 namespace SampleApp.XF.Droid
@@ -21,7 +20,6 @@ namespace SampleApp.XF.Droid
         {
             base.InitializeFirstChance();
 
-            Mvx.IoCProvider.RegisterType<INativeThemeService, AndroidThemeService>();
         }
     }
 }
