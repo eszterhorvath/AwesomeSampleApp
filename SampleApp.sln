@@ -92,6 +92,7 @@ Global
 		{F879124C-600D-4700-A301-0DF20BA67C7C}.Debug|ARM64.ActiveCfg = Debug|iPhone
 		{F879124C-600D-4700-A301-0DF20BA67C7C}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{F879124C-600D-4700-A301-0DF20BA67C7C}.Debug|iPhone.Build.0 = Debug|iPhone
+		{F879124C-600D-4700-A301-0DF20BA67C7C}.Debug|iPhone.Deploy.0 = Debug|iPhone
 		{F879124C-600D-4700-A301-0DF20BA67C7C}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
 		{F879124C-600D-4700-A301-0DF20BA67C7C}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
 		{F879124C-600D-4700-A301-0DF20BA67C7C}.Debug|x64.ActiveCfg = Debug|iPhone

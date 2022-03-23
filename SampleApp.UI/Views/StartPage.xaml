@@ -1,62 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <views:MvxContentPage x:TypeArguments="viewModels:StartViewModel"
-    xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
-             xmlns:viewModels="clr-namespace:SampleApp.Core.ViewModels;assembly=SampleApp.Core"
-             xmlns:behaviors="clr-namespace:SampleApp.UI.Behaviors;assembly=SampleApp.UI"
-             xmlns:system="clr-namespace:System;assembly=netstandard"
-             x:Class="SampleApp.UI.Views.StartPage"
-             x:DataType="viewModels:StartViewModel"
-             Title="Awesome Sample App"
-             BackgroundColor="{AppThemeBinding Light=Snow, Dark=Black}">
-    <StackLayout>
-        <StackLayout.Resources>
-        </StackLayout.Resources>
-        <Label Text="Welcome to Awesome Sample App!"
-               VerticalOptions="Center" 
-               HorizontalOptions="CenterAndExpand"
-               Margin="50"
-               TextColor="{AppThemeBinding Light=Black, Dark=Snow}"/>
-        <Label Text="What's your favorite theme?"
-               HorizontalOptions="StartAndExpand"
-               VerticalOptions="Center"
-               Margin="20,20,20,0"
-               TextColor="{AppThemeBinding Light=Black, Dark=Snow}"/>
-        <Picker x:Name="ThemePicker"
-                ItemsSource="{Binding KeysList}"
-                VerticalOptions="Center"
-                Margin="20,0,20,20">
-            <Picker.FontSize>
-                <OnPlatform x:TypeArguments="system:Double">
-                    <On Platform="iOS" Value="12" />
-                    <On Platform="Android, UWP" Value="14" />
-                </OnPlatform>
-            </Picker.FontSize>
-        </Picker>
-        <StackLayout Orientation="Horizontal">
-            <Label Text="Your selected theme: "
-                   VerticalOptions="Center" 
-                   HorizontalOptions="Center"
-                   Margin="20,10,0,10"
-                   TextColor="{AppThemeBinding Light=Black, Dark=Snow}"/>
-            <Label x:Name="ActualThemeLabel"
-                   VerticalOptions="Center" 
-                   HorizontalOptions="Center"
-                   Margin="0,10,10,10"
-                   TextColor="{AppThemeBinding Light=Black, Dark=Snow}"/>
-        </StackLayout>
-        <StackLayout Orientation="Horizontal">
-            <Label Text="Your actual system theme setting: "
-                   VerticalOptions="Center" 
-                   HorizontalOptions="Center"
-                   Margin="20,10,0,10"
-                   TextColor="{AppThemeBinding Light=Black, Dark=Snow}"/>
-            <Label x:Name="SystemThemeLabel"
-                   VerticalOptions="Center" 
-                   HorizontalOptions="Center"
-                   Margin="0,10,10,10"
-                   TextColor="{AppThemeBinding Light=Black, Dark=Snow}"/>
-        </StackLayout>
+                      xmlns="http://xamarin.com/schemas/2014/forms"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                      xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+                      xmlns:viewModels="clr-namespace:SampleApp.Core.ViewModels;assembly=SampleApp.Core"
+                      x:Class="SampleApp.UI.Views.StartPage"
+                      x:DataType="viewModels:StartViewModel"
+                      Title="Awesome Sample App">
+    <StackLayout Orientation="Vertical">
+        <Button Text="Test app themes"
+                Command="{Binding OpenThemeTester}" />
     </StackLayout>
 </views:MvxContentPage>

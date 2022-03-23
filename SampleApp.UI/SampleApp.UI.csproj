@@ -24,4 +24,10 @@
     <ItemGroup>
       <Folder Include="Themes\" />
     </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="Views\ThemeTestPage.xaml">
+        <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      </EmbeddedResource>
+    </ItemGroup>
 </Project>
