@@ -14,6 +14,7 @@
     <ItemGroup>
         <PackageReference Include="MvvmCross.Forms" Version="6.4.3" />
         <PackageReference Include="Xamarin.Essentials" Version="1.5.2" />
+        <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
         <PackageReference Include="Xamarin.Forms" Version="4.8.0-custom-optiq.11" />
     </ItemGroup>
 
@@ -26,6 +27,9 @@
     </ItemGroup>
 
     <ItemGroup>
+      <EmbeddedResource Update="Views\ImageLoadingTestPage.xaml">
+        <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      </EmbeddedResource>
       <EmbeddedResource Update="Views\ThemeTestPage.xaml">
         <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       </EmbeddedResource>

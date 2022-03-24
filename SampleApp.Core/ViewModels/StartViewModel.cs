@@ -1,9 +1,6 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Windows.Input;
-using MvvmCross.Commands;
-using MvvmCross.Navigation;
+﻿using MvvmCross.Navigation;
 using MvvmCross.ViewModels;
+using ReactiveUI;
 
 namespace SampleApp.Core.ViewModels
 {
@@ -11,12 +8,17 @@ namespace SampleApp.Core.ViewModels
     {
         public StartViewModel(IMvxNavigationService navigation)
         {
-            OpenThemeTester = new MvxCommand(async () =>
+            OpenThemeTesterCommand = ReactiveCommand.CreateFromTask(async () =>
             {
                 await navigation.Navigate<ThemeTestViewModel>();
             });
+            OpenImageLoadingTesterCommand = ReactiveCommand.CreateFromTask(async () =>
+            {
+                await navigation.Navigate<ImageLoadingTestViewModel>();
+            });
         }
 
-        public IMvxCommand OpenThemeTester { get; set; }
+        public IReactiveCommand OpenThemeTesterCommand { get; set; }
+        public IReactiveCommand OpenImageLoadingTesterCommand { get; set; }
     }
 }

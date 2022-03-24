@@ -7,13 +7,22 @@
       <LangVersion>8.0</LangVersion>
   </PropertyGroup>
 
-    <ItemGroup>
-        <PackageReference Include="MvvmCross" Version="6.4.3" />
-        <PackageReference Include="MvvmCross.Plugin.Messenger" Version="6.4.3" />
-    </ItemGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Services\" />
+        <PackageReference Include="iCL.Plugins.FileRepository" Version="1.0.5" />
+        <PackageReference Include="MvvmCross" Version="6.4.3" />
+        <PackageReference Include="MvvmCross.Plugin.Messenger" Version="6.4.3" />
+        <PackageReference Include="ReactiveUI" Version="17.1.50" />
+        <PackageReference Include="System.Reactive" Version="5.0.0" />
+        <PackageReference Include="System.Reactive.Linq" Version="5.0.0" />
+        <PackageReference Include="Xam.Plugin.Media" Version="4.1.4-savepicturetogallery-fix" />
     </ItemGroup>
 
 </Project>

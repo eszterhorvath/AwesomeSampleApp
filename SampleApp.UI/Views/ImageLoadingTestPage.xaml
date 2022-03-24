@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:MvxContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                      xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+                      xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+                      xmlns:viewModels="clr-namespace:SampleApp.Core.ViewModels;assembly=SampleApp.Core"
+                      x:Class="SampleApp.UI.Views.ImageLoadingTestPage"
+                      x:DataType="viewModels:ImageLoadingTestViewModel"
+                      Title="Image loading">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="You can test image loading here!"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="CenterAndExpand"
+                   Margin="20"
+                   TextColor="Black" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0"
+                        HeightRequest="80"
+                        Text="Take picture"
+                        Command="{Binding TakePictureCommand}" />
+                <Button Grid.Column="1"
+                        HeightRequest="80"
+                        Text="Pick picture from gallery"
+                        Command="{Binding PickPictureCommand}" />
+            </Grid>
+            <Label Text="Xamarin.Forms.Image"
+                   TextColor="Black" />
+            <Image Source="{Binding ImagePath}"
+                   IsVisible="{Binding HasImage}"
+                   HeightRequest="200"
+                   Aspect="AspectFit" />
+            <Label Text="FFImageLoading.Forms.CachedImage"
+                   TextColor="Black" />
+            <forms:CachedImage Source="{Binding ImagePath}"
+                               IsVisible="{Binding HasImage}"
+                               HeightRequest="200"
+                               Aspect="AspectFit" />
+        </StackLayout>
+    </ScrollView>
+</views:MvxContentPage>

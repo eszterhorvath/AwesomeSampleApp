@@ -8,7 +8,16 @@
                       x:DataType="viewModels:StartViewModel"
                       Title="Awesome Sample App">
     <StackLayout Orientation="Vertical">
+        <StackLayout>
+            <Label Text="Welcome to Awesome Sample App!"
+                   VerticalOptions="Center"
+                   HorizontalOptions="CenterAndExpand"
+                   Margin="50"
+                   TextColor="Black" />
+        </StackLayout>
         <Button Text="Test app themes"
-                Command="{Binding OpenThemeTester}" />
+                Command="{Binding OpenThemeTesterCommand}" />
+        <Button Text="Test image loading"
+                Command="{Binding OpenImageLoadingTesterCommand}" />
     </StackLayout>
 </views:MvxContentPage>
