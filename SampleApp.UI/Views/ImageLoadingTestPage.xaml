@@ -12,8 +12,7 @@
             <Label Text="You can test image loading here!"
                    VerticalOptions="Center" 
                    HorizontalOptions="CenterAndExpand"
-                   Margin="20"
-                   TextColor="Black" />
+                   Margin="20" />
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
@@ -22,20 +21,18 @@
                 <Button Grid.Column="0"
                         HeightRequest="80"
                         Text="Take picture"
-                        Command="{Binding TakePictureCommand}" />
+                        Clicked="TakePicture" />
                 <Button Grid.Column="1"
                         HeightRequest="80"
                         Text="Pick picture from gallery"
-                        Command="{Binding PickPictureCommand}" />
+                        Clicked="PickPicture" />
             </Grid>
-            <Label Text="Xamarin.Forms.Image"
-                   TextColor="Black" />
+            <Label Text="Xamarin.Forms.Image" />
             <Image Source="{Binding ImagePath}"
                    IsVisible="{Binding HasImage}"
                    HeightRequest="200"
                    Aspect="AspectFit" />
-            <Label Text="FFImageLoading.Forms.CachedImage"
-                   TextColor="Black" />
+            <Label Text="FFImageLoading.Forms.CachedImage" />
             <forms:CachedImage Source="{Binding ImagePath}"
                                IsVisible="{Binding HasImage}"
                                HeightRequest="200"

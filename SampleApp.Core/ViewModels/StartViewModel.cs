@@ -1,24 +1,24 @@
 ﻿using MvvmCross.Navigation;
 using MvvmCross.ViewModels;
-using ReactiveUI;
 
 namespace SampleApp.Core.ViewModels
 {
     public class StartViewModel : MvxViewModel
     {
+        private readonly IMvxNavigationService _navigation;
+
         public StartViewModel(IMvxNavigationService navigation)
         {
-            OpenThemeTesterCommand = ReactiveCommand.CreateFromTask(async () =>
-            {
-                await navigation.Navigate<ThemeTestViewModel>();
-            });
-            OpenImageLoadingTesterCommand = ReactiveCommand.CreateFromTask(async () =>
-            {
-                await navigation.Navigate<ImageLoadingTestViewModel>();
-            });
+            _navigation = navigation;
         }
 
-        public IReactiveCommand OpenThemeTesterCommand { get; set; }
-        public IReactiveCommand OpenImageLoadingTesterCommand { get; set; }
+        public async void NavigateToThemeTestViewModelAsync()
+        {
+            await _navigation.Navigate<ThemeTestViewModel>();
+        }
+        public async void NavigateToImageLoadingTestViewModelAsync()
+        {
+            await _navigation.Navigate<ImageLoadingTestViewModel>();
+        }
     }
 }

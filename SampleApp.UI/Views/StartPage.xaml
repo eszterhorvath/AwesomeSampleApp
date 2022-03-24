@@ -12,12 +12,11 @@
             <Label Text="Welcome to Awesome Sample App!"
                    VerticalOptions="Center"
                    HorizontalOptions="CenterAndExpand"
-                   Margin="50"
-                   TextColor="Black" />
+                   Margin="50" />
         </StackLayout>
         <Button Text="Test app themes"
-                Command="{Binding OpenThemeTesterCommand}" />
+                Clicked="NavigateToThemeTestPage" />
         <Button Text="Test image loading"
-                Command="{Binding OpenImageLoadingTesterCommand}" />
+                Clicked="NavigateToImageLoadingTestPage" />
     </StackLayout>
 </views:MvxContentPage>

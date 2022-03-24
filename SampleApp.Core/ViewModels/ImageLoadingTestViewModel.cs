@@ -18,23 +18,21 @@ namespace SampleApp.Core.ViewModels
         {
             _media = new MediaService();
             _fileStorage = new SampleFileStorage();
-
-            PickPictureCommand = ReactiveCommand.CreateFromTask(async () =>
-            {
-                using var stream = await _media.PickPictureAsync();
-                await StoreFileAsync(stream);
-                ImagePath = await GetFilePathAsync();
-            });
-            TakePictureCommand = ReactiveCommand.CreateFromTask(async () =>
-            {
-                using var stream = await _media.TakePictureAsync();
-                await StoreFileAsync(stream);
-                ImagePath = await GetFilePathAsync();
-            });
         }
 
-        public IReactiveCommand PickPictureCommand { get; set; }
-        public IReactiveCommand TakePictureCommand { get; set; }
+        public async void PickPictureAsync()
+        {
+            using var stream = await _media.PickPictureAsync();
+            await StoreFileAsync(stream);
+            ImagePath = await GetFilePathAsync();
+        }
+
+        public async void TakePictureAsync()
+        {
+            using var stream = await _media.TakePictureAsync();
+            await StoreFileAsync(stream);
+            ImagePath = await GetFilePathAsync();
+        }
 
         public string ImagePath
         {
